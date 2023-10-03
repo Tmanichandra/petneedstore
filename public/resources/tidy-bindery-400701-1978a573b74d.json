@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "tidy-bindery-400701",
+  "private_key_id": "1978a573b74d7aefc400dcd5ca45d8c2cc78c97b",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCYAjSDfmtawNVQ\nBPTX44mup8nRd7w45SzTEpZU+TDR/GK/y62wfYkXi9XlHPbx/ZXzDS6k0LpcRy2i\nNraeJTuKLnP9+v9YGs49Xw/f2DopDq+xXt2R7XwZqH8/iTEIvjKZETCUlBxOi9tM\nbACVKqiQoDOWthbaAJJKr7K0JdLrXpal0rkYbjRvQqm3zBxmlwQcFaiF2MFqQJs7\nTipgPaBoqmTjXrrvpAzTx3qN1H9pVfYtOnMtju8zo54xE893/3EEDI8AF4QM1sWe\nZF02c/08v8S1AQ1p+ajlfI/lsCTLPB6CvlZ5Y0oj/JZeACwRkqm1ZEor9Wtqx+Uu\nuI8WHD9PAgMBAAECggEAGGunmsXBOCU+n8phY3BEpZstyx8coq9UEjIsQJ5//1w3\n/m7EX/7q+q4Wa5EfAyV65Onl58iOCAEkuFNokeOSuyesrs2XdBoVBBBfm9XrEhQv\n7vjknmsJbZMqTj9wxzd3KCwgzTM2O6WFp7Nk1zyxM/rouXpWFX5+AiL+kf55nMz9\nTdix/dUQd5ZUggsx0STR3bhhqgMoQFkjlrgFuWkcoVe0Rjvl4NF/69SBjTGXaTz8\nXFwxHslOeaZ+Bktz1ZHEVwrp9LBj5unF3h1psldn49nXo3eS1tC0OrwIDlYpDN74\nf0aq4y416Oma3lJbkJrvuql3ylpxqqd+xQu6sjzdoQKBgQDMkaxlL3TEmS7BnkGB\ndjyfOW/LlFVaNy1uboc5HZDaPB4Zj58q0N6x1h8gFR+KwaBPmWTdZxgRO5Zpn0nd\nUbjqsYUQ8z5LnG+gsDJyOIZ/mwCnpj/co9pv3wFsO9KWKVoq7/GWWEkenmjjO667\n7E8ym3jrcaCuXSQWOYMmUU7RNwKBgQC+OazbKtMw3KO3hsDlGzZZ/tjGypcK+m/Q\nprGZg80o/lvBZnM6jEQ1+/H6DBcXPiBFj+HFbJp/bUXdv1GFUzfwKxfMpQAsm1Fj\nVy/EQbTEcA3XHQGE+VLG00jOHa24kwBoniaUrL0I73RStEoIcd/py3OV4K1wA6SE\n+tI+l4XuqQKBgQCfLV7aoTGX5KX4LJ9GEG2da8DsxPAhMbwdKM35iGL1HUBCnXm5\nhCs0b6tqeGVBv+Zw6agNizGz/wzMBREhsHxVymoDRXKcvQ4zF8c5D3jAhCjfSsJ4\nedr3n6vovyfehjDOJkRyuyGyPIra/c66FWeOtmFBuvnPk1QIIxpEz5GnwwKBgG08\n67H0dtERc4baAH3Q0bZ+rfgCsRhh1sJIZ6bT1IYdA44dikBt+mHR7BR+yufTCm9I\nAAwCoPpaQwvjaSoaLv5hkMo5Ws9C5ksY71pRrUA9ZQVKJ+w3zTxWavHKg0+CQ3LQ\nlzE7vVabQ/6WgAk3c7Fr31WLb63quZiP/Rpqo0P5AoGBAJDhT34Lb2yKAUd1//BD\nTGOrzbmo4yIm9nrysyRo3J0LJQi6K2wHkl1JMZkF+v1vnzSZemhRm6iB6ZpiiB9B\nEnLCQREUTsAcAeTSveLW4jUxm8TmjcYFPspyZxCAryBkP400TBR4EqFeawTumGMr\ntDGUKcgi0WGdVMsYKBUjQ4mV\n-----END PRIVATE KEY-----\n",
+  "client_email": "petneeds@tidy-bindery-400701.iam.gserviceaccount.com",
+  "client_id": "110912477852617971729",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/petneeds%40tidy-bindery-400701.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

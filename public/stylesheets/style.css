@@ -1,0 +1,232 @@
+@import url("//fonts.googleapis.com/css?family=Kanit|Cabin:400,700");
+
+body {
+    font-family: "Cabin", Arial, sans-serif;
+    color: #112;
+    background-color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Kanit', cursive;
+}
+
+a:hover {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+legend {
+    font-family: 'Kanit', cursive;
+}
+
+.navbar {
+    background-color: rgba(0,0,0,0.8);
+    border-bottom: 4px solid rgba(50,150,255,0.8);
+    font-family: Kanit;
+}
+
+.card {
+    padding: 1rem;
+}
+
+.card-primary {
+    border-color: rgba(0, 20, 25, 0.3);
+    margin-bottom: 0.5rem;
+}
+
+.banner {
+    margin-top: 4em;
+    border-bottom: 1px solid rgba(245, 245, 255, 0.2);
+    margin-bottom: 1.5em;
+    padding-bottom: 0.5em;
+}
+
+.review-header {
+    background-color: rgba(0, 0, 20, 1);
+    color: #eee;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.review {
+    margin-right: -16px;
+    margin-left: -16px;
+    margin-bottom: 0.5em;
+}
+
+.review-img {
+    width: 100%;
+    height: 100%;
+}
+
+.reviewTimestamp {
+    float: right;
+}
+
+.badge-default, .btn-primary {
+    background-color: #ad1d28;
+    border-color: #911821;
+}
+
+.badge {
+    cursor: pointer;
+}
+
+h4 a, h4 a:hover {
+    color: rgba(0, 0, 20, 0.8);
+}
+
+h4 small {
+    font-size: 60%;
+    max-height: 50%;
+    color: #888;
+    margin: 0;
+}
+
+h4{
+    margin: 0 !important;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+h1 small {
+    color: #444;
+}
+
+p {
+    margin-bottom: 0.65rem;
+}
+
+.card-block.prod-card {
+    display: block;
+}
+
+.prod-card:hover {
+    background: rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.prod-desc {
+    margin-bottom: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.prod-price {
+    color: black;
+    font-family: 'Century Gothic';
+    font-size: 20px;
+    margin: 0;
+}
+
+.img-container {
+    height: 65%;
+}
+
+.prod-img {
+    max-width: 6cm;
+    max-height: 6cm;
+    padding: 5px;
+}
+
+.prod-content a, .prod-content small {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    display: block;
+}
+
+.prod-content a {
+    color: black;
+}
+
+.prod-content a:hover {
+    text-decoration: none;
+}
+
+.logo {
+    height: 80px;
+    overflow: hidden;
+    padding-left: 50px;
+}
+.logo img {
+    margin-top: -100px;
+    padding: 10px;
+    background: black;
+    border-radius: 10px;
+}
+
+.qprice {
+    float: right;
+}
+
+.qty {
+    padding: 5px;
+    width:100%;
+}
+
+.qty:hover {
+    cursor: pointer;
+    background: rgba(0, 20, 25, 0.2);
+    transition: .5s;
+
+}
+
+.buybtn{
+    background: #fff;
+    border: 2px solid #223;
+    color: #222;
+}
+
+.addcartbtn {
+    background: #e22;
+    color: #eee;
+}
+
+.buybtn, .addcartbtn{
+    border-radius: 3px;
+    border: 2px solid rgba(0, 20, 25, 0.3);
+    margin: 5px;
+    cursor: pointer;
+}
+
+.prod-desc-input label, .prod-var-input label, .prod-comp-input label {
+    width: 30%;
+    vertical-align: top;
+    margin-bottom: 20px;
+}
+
+hr{
+    background: white;
+}
+
+.pay-btn {
+    gap: 10px;
+    margin: 10px auto;
+}
+
+.btn {
+    margin: 5px;
+}
+
+.form-image {
+    background: rgba(20, 20, 0, 0.1);
+    width: 250px;
+    height: 250px;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+#img-input-display {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.prod-info-img {
+    width: 10cm;
+    max-width: 100%;
+    max-height: 10cm;
+}

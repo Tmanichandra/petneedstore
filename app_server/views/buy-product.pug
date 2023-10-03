@@ -1,0 +1,26 @@
+extends layout
+
+block content
+	.row.banner
+		.col-12
+			h1 Buy Product
+		.card.col-12.col-md-8
+			h3= pageHeader.title
+			h5 #{variation} - &#8377 #{price}
+			h5(style="color: #4af;") Delivery in 4-5 business days
+			p Delivery from: #{caddress}
+			p Add special delivery instructions:
+			textarea(rows="3" cols="30")
+			h5 Select payment method:
+			select
+				option(value="PayPal") PayPal
+				option Paytm
+				option Debit Card
+				option Credit Card
+				option Cash on Delivery
+			.row.pay-btn
+				button.btn.btn-success(type="button") Pay
+				button.btn.btn-outline-dark(type="button" onclick=`location.href="/product/${productid}"`) Cancel
+		.card.col-12.col-md-4
+			img.review-img(src=`${imgSrc}`)
+

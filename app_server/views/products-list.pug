@@ -1,0 +1,30 @@
+extends layout
+include _includes/sharedHTMLfunctions
+
+block content
+	.row.banner
+		.col-12
+			h1 #{pageHeader.title}
+				small &nbsp; #{pageHeader.strapline}
+
+	.row
+		.col-12.col-sm-12.col-md-12.col-lg-9
+			.row
+				each product in products
+					.card.col-lg-4.col-md-6.col-12.card-block.prod-card(onclick=`location.href = '/product/${product._id}';`)
+						.img-container.col-12
+							img.prod-img(src= product.imgSrc)
+						.prod-content.col-12
+							h4
+								a(href=`/product/${product._id}`) #{product.name} &nbsp;
+									small= product.company.name
+								p.prod-price &#8377 #{product.prodVar[0].price}
+							small
+								+outRating(product.rating)
+							p.prod-desc= product.smalDesc
+							each tag in product.tags
+								| &nbsp;
+								span.badge.badge-warning= tag
+
+		.col-md-12.col-lg-3
+			p.lead= sidebar 

@@ -1,0 +1,112 @@
+extends layout
+include _includes/sharedHTMLfunctions
+
+block content
+	.row.banner
+		.col-12
+			h1 Add Product
+	.row
+		.col-12
+			form(action='/api/products', method='post' enctype="multipart/form-data")
+				.row
+					.col-12
+						h2 Product Description
+					br
+					.col-12.col-md-8.prod-desc-input
+						label(for='name') Product Name : 
+						input(name='name')
+						br
+						label(for='smalDesc') Product small description : 
+						input(name='smalDesc')
+						br
+						label(for='prodDesc') Product full description : 
+						textarea(name='prodDesc', rows='4', cols='50')
+						br
+						label(for='tags') Tags (seperated by commas) : 
+						input(name='tags')
+					.col-12.col-md-4
+						label(for='imgSrc') 
+							h3 Insert square image
+						.form-image
+							input#img-input(type="file" name="imgSrc" accept="image/*" required)
+							img#img-input-display(src="" style="display:none;")
+						button.btn.btn-info#img-change(style="display:none;" href="" type="button") Change Image
+						br
+				hr
+
+				.row
+					.col-12
+						h2 Variations
+					br
+					.col-12.prod-var-input
+						label(for='variation1') Variation 1 : 
+						input(name='variation1')
+						br
+						label(for='price1') Price 1 :
+						input(name='price1')
+						br
+						label(for='variation2') Variation 2 : 
+						input(name='variation2')
+						br
+						label(for='price2') Price 2 :
+						input(name='price2')
+						br
+						label(for='variation3') Variation 3 : 
+						input(name='variation3')
+						br
+						label(for='price3') Price 3 :
+						input(name='price3')
+						br
+				hr
+
+				.row
+					.col-12
+						h2 Company Description
+					br
+					.col-12.prod-comp-input
+						label(for='cname') Company Name : 
+						input(name='cname')
+						br
+						label(for='cdesc') Company Description : 
+						input(name='cdesc')
+						br
+						label(for='caddress') Company Address :
+						input(name='caddress')
+						br 
+						br
+						input(type='submit' value='Submit')
+	script.
+		const imgInputDisp = document.getElementById("img-input-display");
+		const imgInput = document.getElementById("img-input");
+		const imgChangeBtn = document.getElementById("img-change");
+		const formImg = document.querySelector(".form-image");
+		imgInput.addEventListener('change', function() {
+			const file = imgInput.files[0];
+			if(file) {
+				const reader = new FileReader();
+				reader.onload = function (e) {
+					imgInput.style.display = "none";
+					imgInputDisp.src = e.target.result;
+					imgInputDisp.style.display = "block";
+				}
+				formImg.style.backgroundColor = "white";
+				imgChangeBtn.style.display = "block";
+				reader.readAsDataURL(file);
+			}
+		});
+		imgChangeBtn.addEventListener('click', function() {
+			imgInput.addEventListener("change", function (event) {
+				const file = event.target.files[0];
+				if (file) {
+					const reader = new FileReader();
+
+					reader.onload = function (e) {
+						imgInputDisp.src = e.target.result;
+						imgInputDisp.style.display = "block";
+					};
+
+					reader.readAsDataURL(file);
+				}
+			});
+			imgInput.click();
+		});

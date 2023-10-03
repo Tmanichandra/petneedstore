@@ -1,0 +1,36 @@
+Product Schema
+
+db.products.insertOne({ 
+name: 'Dog Brush', 
+smalDesc: 'A dog brush for rough hair', 
+prodDesc: 'The Evolution self-cleaning dog brush saves you valuable cleaning time. At the touch of a button, the hairpins retract and hair falls out. Put the button back and you are ready to start again.', 
+rating: 5, 
+tags: ['Dog', 'Brush', 'Rough hair', 'Grooming'], 
+company: { 
+name: 'Evolution', 
+desc: 'Pet Evolution uses only the highest quality, all-natural products. Our certified groomers specialize in breed specific grooming and stay current on new techniques and styles.', 
+coords: [17.36112305217448, 78.54685923419895], 
+address: '3 Green Hills, L.B. Nagar, Hyderabad' 
+}, 
+prodVar: [{ 
+variation: 'Rough Hair', 
+price: 900
+}] 
+})
+
+
+Review Schema
+
+db.products.update({ 
+name: 'Dog Brush' 
+}, { 
+$push: {
+reviews: { 
+author: 'Vishwas', 
+_id: ObjectId(), 
+rating: 1, 
+timestamp: new Date("April 21, 2019"), 
+reviewText: "Not good enough"
+} 
+} 
+})
